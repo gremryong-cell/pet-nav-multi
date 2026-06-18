@@ -1,4 +1,4 @@
-/* ===== Pet Nav Multi — Shared Styles ===== */
+﻿/* ===== Pet Nav Multi — Shared Styles ===== */
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
 :root {
   --bg-primary: #0d0d12;
@@ -185,3 +185,30 @@ footer .links a { color: var(--text-secondary); transition: var(--transition); }
 footer .links a:hover { color: var(--accent); }
 
 @media (max-width: 768px) { .header-inner { flex-wrap: wrap; } .search-box { order: 3; max-width: 100%; flex-basis: 100%; } .hero { padding: 24px 16px 20px; } .main-layout { padding: 0 16px 24px; } .article, .content-page { padding: 0 16px 24px; } }
+
+
+/* ===== Language Selector ===== */
+.lang-selector {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 1000;
+}
+.lang-selector select {
+  padding: 4px 8px;
+  font-size: 13px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.95);
+  cursor: pointer;
+  outline: none;
+  font-family: inherit;
+}
+.lang-selector select:hover {
+  border-color: #7c3aed;
+}
+
+/* Header needs position relative for absolute positioning of lang selector */
+.header-inner {
+  position: relative;
+}
