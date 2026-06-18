@@ -1,0 +1,4 @@
+﻿User-agent: *
+Allow: /
+
+Sitemap: https://gremryong-cell.github.io/pet-nav-multi/sitemap.xml
